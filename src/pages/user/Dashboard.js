@@ -34,7 +34,7 @@ export default function Dashboard(){
                     <h5 className="m-3">
                         <ul>
                             <li>
-                                You will be given 8 questions.
+                                You will be given 6 questions.
                             </li>
                             <hr/>
                             <li>
@@ -64,7 +64,7 @@ export default function Dashboard(){
                                 (async () => {
                                     try{
                                         const que = score + 1;
-                                        if (que === 9){
+                                        if (que === 7){
                                             navigate("/dashboard/user");
                                         }
                                         else {
@@ -77,7 +77,7 @@ export default function Dashboard(){
                                 })()
                             )}
                         >
-                            {score === 0 ? "Start Game" : score===8 ? "See Results  " : "Continue Game"}
+                            {score === 0 ? "Start Game" : score===6 ? "See Results  " : "Continue Game"}
                         </button>
                     </h5>
                 </div>

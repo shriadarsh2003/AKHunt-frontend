@@ -27,7 +27,7 @@ export default function Que1(){
             else {
                 toast.error("Wrong Answer");
                 // window.location.reload();
-                setTimeout(function(){ window.location.reload(); }, 1000);
+                // setTimeout(function(){ window.location.reload(); }, 1000);
             }
         }
         catch(err){
@@ -38,33 +38,16 @@ export default function Que1(){
 
     return (
         <>
-            <Jumbotron title="Question 1" subTitle="Search the image."/>
+            <Jumbotron title="Question 1" subTitle="Find the number."/>
             <div className="container-fluid jumbotron">
                 <div className="row">
                     <div className="col-md-6">
                         <h2 className="p-3 mt-3 mb-2 h4 bg-info text-center ">Problem Statement</h2>
                         <h4 className="mt-4 bg-dark p-5">
-                            Help Chefina to find the Flag in the given image.<br/>
+                            You are given a string "88888888".<br/>
+                            You have to insert '+' at valid positions in the string to make the sum 1000.<br/>
                             <hr/>
-                            <Link 
-                                style={{textDecoration: "none", color: "white", fontWeight: "bold", marginLeft: "40%"}} 
-                                to="https://res.cloudinary.com/djejaxsp7/image/upload/v1681666788/flag1_ekli96.png" 
-                                target="_blank"
-                            > 
-                                IMAGE
-                            </Link>
-                            <hr/>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Hints
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li className="dropdown-item">1. Focus on only one color at a time.</li>
-                                    <li className="dropdown-item">2. The flag is the name of a famous personality.</li>
-                                    <li className="dropdown-item">3. He is a co-founder of many successful companies. His name ends with k.</li>
-                                </ul>
-                            </div>
-                            <hr/>
+                            <b>How many numbers of '+' character will you have to use??</b>
                         </h4>
                     </div>
                     <div className="col-md-6">

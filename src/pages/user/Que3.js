@@ -1,7 +1,7 @@
 import Jumbotron from "../../components/cards/Jumbotron";
 import { toast } from "react-hot-toast";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 export default function Que3(){
 
     const navigate = useNavigate();
@@ -26,7 +26,7 @@ export default function Que3(){
             else {
                 toast.error("Wrong Answer");
                 // window.location.reload();
-                setTimeout(function(){ window.location.reload(); }, 1000);
+                // setTimeout(function(){ window.location.reload(); }, 1000);
             }
         }
         catch(err){
@@ -37,16 +37,27 @@ export default function Que3(){
 
     return (
         <>
-            <Jumbotron title="Question 3" subTitle="Find the number." />
+            <Jumbotron title="Question 3" subTitle="Know The Crypto" />
             <div className="container-fluid jumbotron">
                 <div className="row">
                     <div className="col-md-6">
                         <h2 className="p-3 mt-3 mb-2 h4 bg-info text-center ">Problem Statement</h2>
                         <h4 className="mt-4 bg-dark p-5">
-                            You are given a string "88888888".<br/>
-                            You have to insert '+' at valid positions in the string to make the sum 1000.<br/>
+                            In wargames jumping between the Bases is quite a fun, right! <hr/>Why not try it here... <br/>
+                            <Link 
+                                style={{textDecoration: "none", color: "white", marginLeft: "40%"}}
+                                to="https://res.cloudinary.com/djejaxsp7/raw/upload/v1681679865/code_qsf3fu.txt" target="_blank">Find Code</Link>
                             <hr/>
-                            <b>How many numbers of '+' character will you have to use??</b>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Hints
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li className="dropdown-item">1. Convert the code into base 32 and then into base 64.</li>
+                                    <li className="dropdown-item">2. Didn't found flag?? Repeat the same process until you don't get the flag</li>
+                                </ul>
+                            </div>
+                        
                         </h4>
                     </div>
                     <div className="col-md-6">

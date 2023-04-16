@@ -26,7 +26,7 @@ export default function Que7(){
             else {
                 toast.error("Wrong Answer");
                 // window.location.reload();
-                setTimeout(function(){ window.location.reload(); }, 1000);
+                // setTimeout(function(){ window.location.reload(); }, 1000);
             }
         }
         catch(err){
@@ -43,7 +43,7 @@ export default function Que7(){
                     <div className="col-md-6">
                         <h2 className="p-3 mt-3 mb-2 h4 bg-info text-center ">Problem Statement</h2>
                         <h4 className="mt-4 bg-dark p-5">
-                            You are given a string "88888888".<br/>
+                            Proceed to this link to find the flag to this question<br/>
                             You have to insert '+' at valid positions in the string to make the sum 1000.<br/>
                             <hr/>
                             <b>How many numbers of '+' character will you have to use??</b>
