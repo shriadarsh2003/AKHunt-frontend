@@ -26,7 +26,7 @@ export default function Que5(){
             else {
                 toast.error("Wrong Answer");
                 // window.location.reload();
-                setTimeout(function(){ window.location.reload(); }, 1000);
+                // setTimeout(function(){ window.location.reload(); }, 1000);
             }
         }
         catch(err){
